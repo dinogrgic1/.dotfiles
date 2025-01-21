@@ -104,6 +104,9 @@ def get_status(bat_name: str) -> Status:
         return Status.CHARGING
     elif raw_status == "Discharging":
         return Status.DISCHARGING
+    elif raw_status == "Not charging":
+        # TODO(Dino): Change this to some other meaningful status
+        return Status.PASSIVE
     else:
         raise ValueError
 
