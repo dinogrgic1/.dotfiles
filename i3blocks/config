@@ -10,16 +10,6 @@ signal=10
 #interval=2
 #signal=10
 
-[battery_poly]
-command=$SCRIPT_DIR/battery_poly
-label=BAT
-interval=5
-
-[backlight]
-command=$SCRIPT_DIR/backlight
-label=☀
-interval=5
-
 [cpu_usage]
 command=$SCRIPT_DIR/cpu_usage
 interval=10
